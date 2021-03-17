@@ -1,0 +1,10 @@
+ns3 network simulator lacks evaluating network attached storage topology as it doesn't have any model to imitate the storage server. 
+This ns3 module integrate MQSIM (https://github.com/CMU-SAFARI/MQSim, which emulates NVME and SATA SSD devices) with ns3, so that end point stoarge  modeling can be done.
+
+In order to integrate in ns3, put the whole project in src/ directory of ns3 and do:
+
+./waf configure --disable-werror
+
+followed by
+
+./waf
