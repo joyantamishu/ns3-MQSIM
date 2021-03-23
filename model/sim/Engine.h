@@ -3,9 +3,11 @@
 
 #include <iostream>
 #include <unordered_map>
+#include <queue>
 #include "ns3/Sim_Defs.h"
 #include "ns3/EventTree.h"
 #include "ns3/Sim_Object.h"
+#include "ns3/SimInterface.h"
 namespace ns3
 {
 namespace MQSimEngine {
@@ -23,6 +25,10 @@ namespace MQSimEngine {
 			delete _EventList;
 		}
 		
+		std::queue<SimInterfaceRequest*> queued_requests;
+
+
+		//added for interfacing
 		static Engine* Instance();
 		sim_time_type Time();
 		Sim_Event* Register_sim_event(sim_time_type fireTime, Sim_Object* targetObject, void* parameters = NULL, int type = 0);

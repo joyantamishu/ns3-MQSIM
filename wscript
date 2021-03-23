@@ -106,6 +106,7 @@ def build(bld):
         'model/utils/rapidxml/rapidxml_print.hpp',
         'model/utils/rapidxml/rapidxml_utils.hpp',
         'model/utils/rapidxml/rapidxml.hpp',
+        'model/utils/SimInterface.h',
         'model/host/SATA_HBA.h',
         'model/host/Host_IO_Request.h',
         'model/host/IO_Flow_Base.h',
